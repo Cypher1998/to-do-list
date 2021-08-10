@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+    color: #fff;
+    margin: 5rem auto;
+}
+
+body {
+    text-align: center;
+    background: #04a1bf;
+    font-family: verdana;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header {
+    padding: 1.5rem 1.2rem;
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container-1 {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.container-1 p {
+    margin-bottom: 1.25em;
+    font-size: 1rem;
+}
+
+.container-1 .paragraph-1 {
+    color: #ffff09;
+}
+
+.container-1 .paragraph-1::after {
+    content: '.';
+}
+
+.container-1 .paragraph-2 {
+    color: #1aff05;
+}
+
+.container-1 .paragraph-3 {
+    color: #023002;
+}
+
+.container-2 {
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center
+}
+
+.container-2 input {
+    padding: 0.65rem;
+    width: 85%;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.container-2 i {
+    margin-left: 0.3rem;
+    color: #02a3c0;
+    border: 1px solid #025f70;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    background: #025f70;
+    cursor: pointer;
+} 
+
+.container-2 i:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #000;
+}
+
+ul {
+    padding-bottom: 1.5rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+    border: 2px solid #025f70;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    background: #51df51;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    width: 83%;
+    margin: auto;
+    margin-bottom: 0.7rem;
+    user-select: none;
+}
+
+ul li.to-do-list-dv {
+    display: none;
+}
+
+.clear {
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #022930;
+    right: 5%;
+    cursor: pointer;
+}
+
+.clear:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 640px) {
+    html {
+        margin-top: 3rem;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+    }
+
+    .container-1 p {
+        font-size: 1.1rem;
+    }
+
+    .container-1 .paragraph-1::after {
+        content: ' (max. 28 characters).';
+    }
+
+    .container-2 input {
+        background-color: rgb(252, 238, 240);
+    }
+
+    ul li {
+        background-color: rgba(2,95,112,0.2);
+        color: rgb(255, 255, 255);
+    }
+
+    ul li.to-do-list {
+        display: none;
+    }
+
+    ul li.to-do-list-dv {
+        display: block;
+    }
+
+    .clear {
+        right: 3%;
+    }
+}
